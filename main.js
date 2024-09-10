@@ -4,6 +4,9 @@ const port = process.env.PORT || 3000;
 
 // Rename server
 const serverName = "customserver";
+app.get('/', (req, res) => {
+    res.send('ITE314 Activity');
+  });
 
 // Route to return first name in all caps
 app.get('/firstname', (req, res) => {
